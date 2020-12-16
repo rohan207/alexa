@@ -42,18 +42,18 @@ def run_alexa():
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time)
     elif 'who the heck is' in command:
-        person = command.replace('who the heck is', '')
+        person = command.replace('who the fuck is', '')
         info = wikipedia.summary(person, 1)
         print(info)
         talk(info)
     elif 'date' in command:
-        talk('sorry, I have a headache')
+        talk('sorry, i have a boyfriend akela marja tu')
     elif 'are you single' in command:
         talk('I am in a relationship with wifi')
     elif 'joke' in command:
         talk(pyjokes.get_joke())
     else:
-        talk('Please say the command again.')
+        talk('Please repeat command')
 
 
 while True:
